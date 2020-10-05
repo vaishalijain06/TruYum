@@ -1,0 +1,79 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>
+            truYum- Edit Menu Item 
+        </title>
+        <link rel="stylesheet" type="text/css" href="style/style.css">
+        <script type="text/javascript" src="js/script.js">   </script>
+    </head>
+    <body>
+        <header>
+            <div id="header-section">
+                <div class="col-2">
+                    <img class="logo" src="images/logo.png" height="60" width="150"> 
+                </div>
+                <div class="navigate">
+                     <a class="navigation-link" href="menu_item_list_admin.html">Menu</a>
+                </div>
+            </div>
+        </header>
+    
+        
+         <div class="page-content">
+                
+                <div>
+                    <caption>
+                        <h3 class="heading">Edit Menu Item</h3>
+                    </caption>
+                         <div>
+                                    <div id="namebox">
+                                        <label for="pname">Name</label><br>
+                                        <input type="text" name="title">
+                                    </div>
+                                    <div id="pricebox">
+                                         <label for="price">Price (Rs.)</label><br>
+                                        <input type="text" name="price">
+                                    </div>
+                                    <div id="launch">
+                                        <label for="dateOfLaunch">Date of Launch</label><br>
+                                        <input type="date" name="dateOfLaunch"> 
+                                    </div>
+                                    <div id="activebtn">
+                                        <label for="active">Active</label><br>
+                                        
+                                            <input type="radio" name="inStock" checked><label>Yes</label>
+                                            <input type="radio" name="inStock" ><label>No</label>
+                                    </div>
+                                    <div id="cat">
+                                        <label for="category">Category</label>
+                                        <select id="category" class="form-control">
+                                            <option selected>Choose</option>
+                                            <option value="Starters">Starters</option>
+                                            <option value="Main Course">Main Course</option>
+                                            <option value="Dessert">Dessert</option>
+                                            <option value="Drinks">Drinks</option>
+                                        </select>
+                                    </div> 
+                                    <div id="delivery">
+                                        <input class="form-check-input" type="checkbox" id="freeDelivery">
+                                        <label class="form-check-label" for="gridCheck">
+                                            Free Delivery
+                                        </label>
+                                    </div>
+                            </div>
+                            <div id="submit">
+                                <a href="edit-menu-item-status.html"> <button  type="submit" value="submit" onclick="validating_Form()">Save</button> </a>
+                            </div>
+                    </div>
+                </div>
+                
+            
+            <footer class="footer-section">
+                <div>
+                    <div id="foot">Copyright &copy; 2019</div>
+                </div>
+            </footer>
+            
+        </body>
+</html>
